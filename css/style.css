@@ -43,7 +43,7 @@ nav {
 /* ****************** HERO SECTION ************************ */
 
 .hero-section {
-    background-image: url(/images/banner.png);
+    background-image: url(../images/banner.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,10 +196,10 @@ font-weight: 600;
     color: #ff5e9e
 }
 .carousel-control-prev-icon{
-background-image: url(/images/left-arrow.png) !important;
+background-image: url(../images/left-arrow.png) !important;
 }
 .carousel-control-next-icon{
-    background-image: url(/images/right-arrow.png) !important;
+    background-image: url(../images/right-arrow.png) !important;
 }
 
 /********************* CALL TO ACTION *****************/
