@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif  ;
+    text-decoration: none !important;
+}
+nav {
+    background-color: #F7E2E2;
+}
+.navbar-nav .nav-link{
+    color: #EA126A;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active{
+    color: #ea126891 !important;
+}
+
+.navbar-nav .nav-link.active{
+    position: relative; 
+}
+.navbar-nav .nav-link:hover{
+    color: #ea12687e;
+    position: relative;
+}
+.navbar-nav .nav-link.active::before,
+.nav-link:hover::before{
+  content: ""; /* Create an empty pseudo-element for the underline */
+  position: absolute; /* Position the underline absolutely */
+  left: 0; /* Position the underline at the start of the link text */
+  bottom: 0px; /* Adjust this value to control the spacing between text and underline */
+  width: 100%; /* Make the underline span the entire width of the link */
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #EA126A; /* Set the underline color for active links */
+}
+  
+.iconColor {
+  color: #EA126A!important;
+}
+.navbar .navbar-toggler:focus {
+  color: #ea126859;
+}  
+
+/* ****************** HERO SECTION ************************ */
+
+.hero-section {
+    background-image: url(/images/banner.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+#myForm {
+    max-width: 35%; 
+    background-color: #ffe9e9; 
+    padding: 70px 40px; 
+    margin-right: 80px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px #ea126859;
+}
+#myForm h2{
+    color: #EA126A;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+#myForm input{
+    border: none;
+    border-bottom: #EA126A 2px solid;
+   padding: 15px 75px 10px 15px;
+    width: 100%;
+    margin-bottom: 35px;
+    background-color: transparent;
+    color: #ea12687e;
+    font-size: 1rem;
+}
+#myForm input::placeholder{
+    color: #ea126859;
+}
+#myForm input:focus{
+    outline: none;
+    caret-color: #EA126A;
+    font-weight: 500;
+    color: #ea12687e;
+}
+#myForm  button , .cta button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+  }
+  #myForm  button:after ,.cta button:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EA126A;
+    border-radius: 10rem;
+    z-index: -2;
+    font-weight: 500;
+  }
+  #myForm button:before,.cta button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d70056;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+    font-weight: 500;
+  }
+  #myForm button:hover ,.cta button:hover{
+    color: #fff;
+    font-weight: 500;
+  }
+  #myForm button:hover:before ,.cta button:hover:before  {
+    width: 100%;
+    font-weight: 500;
+  }
+/* Media query for screens equal to or greater than 992px wide */
+@media screen and (max-width: 1028px) {
+    .hero-section {
+        background-image: none; 
+        justify-content: center;
+        height: 60vh;
+        background-color: #F7E2E2;
+    }
+
+    #myForm {
+        max-width: 100%; 
+        padding: 35px; 
+        margin: 0px;
+    }
+    .carousel-control-prev-icon ,.carousel-control-next-icon{
+        background-size: 20px !important;
+    }
+}
+
+
+/* ************************ FEATURES ***************************** */
+.features i{
+    font-size: 5rem;
+    padding: 20px;
+    margin: 50px;
+    color: #ff88b7;
+}
+.features i:hover{
+    color: #d70056;
+}
+.features h3{
+color: #EA126A;
+font-weight: 600;
+}
+.features p{
+    color: #290010;
+}
+
+/* ************************ TESTIMONIALS ***************************** */
+.testimonials{
+    background-color: #F7E2E2;
+    padding: 5% 15%;
+}
+.testimonials h1{
+    color: #EA126A;
+    font-weight: 600;
+}
+.testimonials h6{
+    font-family: 'Montserrat', sans-serif  ;
+    font-weight: 700;
+    color: #d70056;
+}
+.testimonial-image {
+    width: 15%;
+    border-radius: 100%;
+    margin: 30px;
+    box-shadow: 2px 2px 30px 2px #ff88b7;
+}
+.testimonials p{
+    color: #ff5e9e
+}
+.carousel-control-prev-icon{
+background-image: url(/images/left-arrow.png) !important;
+}
+.carousel-control-next-icon{
+    background-image: url(/images/right-arrow.png) !important;
+}
+
+/********************* CALL TO ACTION *****************/
+.cta ,.features {
+    padding: 7% 15%;
+}
+.cta h1{
+    color: #d70056;
+    font-weight: 600;
+}
+.cta button{
+    width: 250px;
+}
+
+/********************** FOOTER **************** */
+.footer{
+    background-color: #F7E2E2;
+}
+.footer p{
+    color: #ff5e9e;
+}
+.footer i{
+    font-size: 40px;
+    color: #d70056
+}
+.footer i:hover{
+    color: #EA126A;
+    font-weight: 600;
+}
+.footer h3{
+    color: #d70056;
+    font-weight: 600;
+}
+.footer p> a ,.connect>p{
+color: #5c0023;
+}
+.footer p> a:hover{
+    font-weight: 500;
+}
+.footer .connect-icon i{
+    font-size: 20px;
+}
+.footer-bottom{
+    border-top: solid 1px #ffe9e9;
+    background-color: #F7E2E2;
+}
+.footer-bottom p{
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #5c0023;
+}
